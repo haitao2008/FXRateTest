@@ -1,0 +1,7 @@
+<h1>Hello Fx</h1>
+
+The exchange rate for EUR is:    <button (click) ="refresh()">Refresh</button>
+
+<div *ngFor="let item of fxData ">
+  {{item.base}}/{{item.symbol}} : {{item.rate}}
+</div>
